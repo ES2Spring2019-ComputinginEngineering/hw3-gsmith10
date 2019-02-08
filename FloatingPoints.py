@@ -3,10 +3,10 @@
 
 # FILL THESE COMMENTS IN
 #*****************************************
-# YOUR NAME:
-# NUMBER OF HOURS TO COMPLETE:  
+# YOUR NAME: Grant Smith
+# NUMBER OF HOURS TO COMPLETE: 0.5  
 # YOUR COLLABORATION STATEMENT(s):
-#
+# Completed Alone
 #
 #*****************************************
 
@@ -55,7 +55,11 @@ def almost_equal(A, B):
     # returns True (boolean) if the difference is less than or equal to 0.000000001 which in Python may be written as 10**-9.
     # It should return False (boolena) if the difference is greater than 0.000000001.
     # Create your function here.
-    return False
+    diff = A-B
+    if abs(diff) < 10**-9:
+        return True
+    else:
+        return False
 
 
 # ****************************************************************************************************
